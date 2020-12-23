@@ -1,0 +1,23 @@
+.common-list-item-component {
+  margin-top: 12px;
+  padding: 16px;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  background: white;
+  box-shadow: 0 3px 3px -2px rgba(0,0,0,0.2), 0px 3px 4px 0px rgba(0,0,0,0.14), 0px 1px 8px 0px rgba(0,0,0,0.12);
+  transition: box-shadow ease 0.2s;
+
+  &:hover {
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12)
+  }
+
+  .common-list-item-details-component {
+    height: 0;
+    overflow: hidden;
+  }
+
+  &.details-expanded .common-list-item-details-component {
+    height: auto;
+  }
+}
